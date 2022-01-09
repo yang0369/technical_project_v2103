@@ -16,14 +16,14 @@ def run_notebook(filename):
     with tempfile.NamedTemporaryFile(suffix=".ipynb") as fout:
         temp_name = fout.name
 
-    # # run jupyter nbconvert
-    # args = ["jupyter", "nbconvert", "--to", "notebook", filename, "--execute",
-    #         "--ExecutePreprocessor.timeout=60", "--output", fout.name]
-    # # subprocess.check_call(args, shell=True)
-    # subprocess.run(args)
+    # run jupyter nbconvert
+    args = ["jupyter", "nbconvert", "--to", "notebook", filename, "--execute",
+            "--ExecutePreprocessor.timeout=60", "--output", temp_name]
+    # subprocess.check_call(args, shell=True)
+    subprocess.run(args)
 
     # read and parse notebook
-    with open(temp_name, "r") as fout:
+    with open(filename, 'r+', encoding="utf-8") as fout:
         fout.seek(0)
         notebook = nbformat.read(fout, nbformat.current_nbformat)
 
