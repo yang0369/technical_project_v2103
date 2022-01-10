@@ -22,7 +22,7 @@ In this assignment, I was given 31 users with their telco browsing records data,
 
 # Project Structure:
 
-<img src="./images/image-20220110130444318.png" alt="image-20220110130444318" style="zoom:50%;" />
+<img src="./images/image-20220110130444318.png" alt="image-20220110130444318" style="zoom:25%;" />
 
 There are 4 problem statements in this assignment, I have tried problem statement 2 - notebooks/2.0_user_segmentation.ipynb, Thus all the analysis can be found in this notebook only.
 
