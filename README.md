@@ -22,7 +22,7 @@ In this assignment, I was given 31 users with their telco browsing records data,
 
 # Project Structure:
 
-<img src="/Users/6estates/Library/Application Support/typora-user-images/image-20220110130444318.png" alt="image-20220110130444318" style="zoom:50%;" />
+<img src="./images/image-20220110130444318.png" alt="image-20220110130444318" style="zoom:50%;" />
 
 There are 4 problem statements in this assignment, I have tried problem statement 2 - notebooks/2.0_user_segmentation.ipynb, Thus all the analysis can be found in this notebook only.
 
@@ -32,15 +32,15 @@ There are 4 problem statements in this assignment, I have tried problem statemen
 
 The dataset contains categorical variables, and most of them are highly correlated.
 
-![image-20220110123431520](/Users/6estates/Library/Application Support/typora-user-images/image-20220110123431520.png)
+![image-20220110123431520](./images/image-20220110123431520.png)
 
 For example, "category_name" and "domain_tags", "referee_domain" and "referer_category". By their names suggest, they carries similar information. In order to get some meaningful features, I tried to feature engineering them,  also impute the missing values. Finally I derived this wide table as below: 
 
-![image-20220110124043604](/Users/6estates/Library/Application Support/typora-user-images/image-20220110124043604.png)
+![image-20220110124043604](./images/image-20220110124043604.png)
 
 Now, we are ready to proceed to fit our ML model, but before that, we need to standardize our data as we are going to apply distance-based model.
 
-![image-20220110124200711](/Users/6estates/Library/Application Support/typora-user-images/image-20220110124200711.png)
+![image-20220110124200711](./images/image-20220110124200711.png)
 
 The features now have the same range and variation, time to train models. 
 
