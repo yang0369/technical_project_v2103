@@ -22,21 +22,7 @@ In this assignment, I was given 31 users with their telco browsing records data,
 
 # Project Structure:
 
-technical_project_v2103
- ┣ docs
- ┣ notebooks
- ┃ ┣ 1.0_dashboarding.ipynb
- ┃ ┣ 2.0_user_segmentation.ipynb
- ┃ ┣ 3.0_user_embedding.ipynb
- ┃ ┗ 4.0_browsing_graph.ipynb
- ┣ src
- ┃ ┣ data
- ┣ tests
- ┃ ┣ __init__.py
- ┃ ┗ test_notebook.py
- ┣ README.md
- ┣ README_Given.md
- ┗ __init__.py
+<img src="/Users/6estates/Library/Application Support/typora-user-images/image-20220110130444318.png" alt="image-20220110130444318" style="zoom:50%;" />
 
 There are 4 problem statements in this assignment, I have tried problem statement 2 - notebooks/2.0_user_segmentation.ipynb, Thus all the analysis can be found in this notebook only.
 
