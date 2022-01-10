@@ -38,11 +38,54 @@ Reminder: You just need to work on ONE of the notebooks.
 #### Problem Statement 2: Develop a solution to perform user segmentation
 
 Tasks and requirements:
-- Develop an unsupervised model to identify clusters of users belong to the same group
-- Decide what type of user clusters to build
-- Tell a story about each cluster, eg. describe the dominant attributes of the cluster
-- Tell a story about your result
-- Reader should be able to re-create your experiment and understand your story by running the notebook 
+
+Develop an unsupervised model to identify clusters of users belong to the same group
+
+###### <u>Ans: I used Kmeans and Agglomerative Clustering methods.</u>
+
+Decide what type of user clusters to build
+
+###### <u> Ans: I try to cluster the users based on their browsing interest or their interested topics</u>
+
+Tell a story about each cluster, eg. describe the dominant attributes of the cluster
+
+###### <u>Ans:</u>
+
+###### <u>- cluster 0: [1, 4, 5, 7, 15, 18, 20, 22, 23, 24, 25, 26, 27, 30, 31]</u>
+
+###### <u>they tend to browse corporate related, such as wellness, reference, technology, so they are probably working adults, and like to post personal life activities on blogs or social media, like playing games and do shopping.</u>  
+
+###### <u>- cluster 1: [3, 21]</u>
+
+######  <u>This group of people seems to be enjoying their life, they browsed art, food, travel, gaming, wellness and even fortunetelling, they browsed education as well, so I guess they are probably school students or young working adults studying part time.</u>  
+
+###### <u>- cluster 2: [2, 6, 8, 9, 10, 11, 17, 19, 28, 29]</u>
+
+###### <u>Similar to group 0, this group of people probably are working in finance-related industry as they browsed banking, finance, technology and education.</u>  
+
+###### <u>- cluster 3: [16]</u>
+
+###### <u>this guy is interested in real estate, cars, homeservices, I guess he probably is buying/bought a house or a car. Also he browsed manga, tavel, ecommerce, jobsearch, education, which implies he is a young adult. he has interests in trading, gambling, which shows he is a risk-taker. In addition, he likes pet apparently. So some stuff related to pets maybe attract his attention.</u>  
+
+###### <u>- cluster 4: [13]</u>
+
+###### <u>compared to the cluster 3 guy, this guy is more conservative as he did not browse any trading or gambling, but he is interested in music, entertainment, sports, gaming and even philanthropic! He is as well interested in real estate and cars, so I suppose he is also an young adult with very healthy hobbies.</u>  
+
+###### <u>- cluster 5: [12]</u>
+
+###### <u>Apart from these common interests, this guy browsed real estate, computer, audtion, cars, fashion, shopping etc. thus I am confident to say that he is going to buy some stuff related to computer, cars or even house. He may be quite happy to receive some promotion for computers or electronics devices.</u>  
+
+###### <u>- cluster 6: [14]</u>
+
+###### <u>this guy is looking for car parking and cars, so I guess he is going to buy a car or change car with very high chance. He/she also likes alcohol and tobacco, and interested in education and jobsearch, so he/she is not old definitely. In addition, he/she likes fashion, eccommerce, travel, shopping, so some e-commerce advertisements maybe can attract his attention.</u>
+
+Tell a story about your result
+
+###### <u>Ans: Based on the users' browsing history, we are able to tell the users' interested topics, their dominant traits and what they may like or dislike, this result of analysis could be applied to find which group of people is more likely to be our tragets for marketing or advertisement campaign.</u>   
+
+Reader should be able to re-create your experiment and understand your story by running the notebook 
+
+###### <u>Ans: For the details of the analysis, please refer to my notebook - "notebooks/2.0_user_segmentation.ipynb".</u>
 
 
 #### Problem Statement 3: Develop a user embedding

@@ -14,9 +14,23 @@ In this assignment, I was given 31 users with their telco browsing records data,
 
 # Quick Tour:
 
-1. all the analysis and modelling works -> notebooks/2.0_user_segmentation.ipynb
+all the analysis and modelling works -> notebooks/2.0_user_segmentation.ipynb
 
-2. run basic testcase for notebook -> open terminal, cd your directory to "tests/", type `pytest test_notebook.py`
+To create an anaconda environment with all the required packages -> open terminal, cd to this project' directory, then run 
+
+```
+conda env create --file my_conda_env.yml
+```
+
+```py
+conda activate starhub 
+```
+
+run basic testcase for notebook -> open terminal, cd your directory to "tests/", type
+
+```
+ pytest test_notebook.py
+```
 
 
 
@@ -42,13 +56,13 @@ Now, we are ready to proceed to fit our ML model, but before that, we need to st
 
 ![image-20220110124200711](./images/image-20220110124200711.png)
 
-The features now have the same range and variation, time to train models. 
+The features now have the same range and variation, time to train models. (*all data here are synthetic data)
 
 Firstly I have tried K-Means model, as K-Means is relatively memory efficient, but seems the result is not as good as I expected, most of the users are grouped into cluster 0, while only very few users are grouped individually. Apparently we cannot get any useful information based on their groupings. I guess this is probably due to the high dimensionality of our dataset, because we have too many categories in total. 
 
 Next, I have tried Agglomerative + Dendrogram method, I think this time the result is more convicing in terms of interpretability. I think this is because Agglomerative is using max distance to group the similar users, so it is more sensitive to the features in sparse data. For example, user_A has a very rare interest that other users dont have, at the same time, user_B also has this interest, then in terms of this feature, the distance between A and B is very short while the distance with other user shall be very large. For K-Means, it uses average distance to group the users, thus this rare feature may not affect the overall groupings if the rest of features are similar enough.
 
-
+For the details of this analysis, please refer to my notebook - "notebooks/2.0_user_segmentation.ipynb".
 
 ### Reference:
 
