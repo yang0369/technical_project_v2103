@@ -1,4 +1,9 @@
 # technical_project_v2103
+
+
+
+# Intro:
+
 My tentative analytical works for a technical assignment.
 
 
@@ -7,7 +12,7 @@ In this assignment, I was given 31 users with their telco browsing records data,
 
 
 
-### Quick tour:
+# Quick Tour:
 
 1. all the analysis and modelling works -> notebooks/2.0_user_segmentation.ipynb
 
@@ -15,7 +20,7 @@ In this assignment, I was given 31 users with their telco browsing records data,
 
 
 
-### Project Structure:
+# Project Structure:
 
 technical_project_v2103
  ┣ docs
@@ -37,7 +42,7 @@ There are 4 problem statements in this assignment, I have tried problem statemen
 
 
 
-### Some Interesting Findings along the Analysis
+# Interesting Sharings
 
 The dataset contains categorical variables, and most of them are highly correlated.
 
